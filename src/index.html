@@ -6,6 +6,25 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="content"></div>
+    <div id="content">
+      <form id="form">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <span class="error" id="emailError" aria-live="polite"></span>
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country">
+        <span class="error" id="countryError" aria-live="polite"></span>
+        <label for="zip">ZIP</label>
+        <input type="text" name="zip" id="zip">
+        <span class="error" id="zipError" aria-live="polite"></span>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" min="8" max="32">
+        <span class="error" id="passwordError" aria-live="polite"></span>
+        <label for="passwordConfirm">Confirm Password</label>
+        <input type="password" name="passwordConfirm" id="passwordConfirm" min="8" max="32">
+        <span class="error" id="passwordConfirmError" aria-live="polite"></span>
+        <button>Submit</button>
+      </form>
+    </div>
   </body>
 </html>
